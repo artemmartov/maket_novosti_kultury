@@ -50,7 +50,7 @@ body {
 }
 
 .main-picture {
-  background-image: url("/image/main.jpg");
+  background-image: url("../image/main.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -117,8 +117,7 @@ body {
 }
 
 .abonements {
-  /* background-color: ; */
-  background: #f7f7f7 url("/image/Ellipse.png") no-repeat 50% 50%;
+  background: #f7f7f7 url("./image/Ellipse.png") no-repeat 50% 50%;
   width: 1440px;
   height: 556px;
 }
