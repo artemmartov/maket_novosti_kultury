@@ -1,0 +1,247 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__wrap {
+  text-align: center;
+}
+
+.header__menu-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header__menu-item a:hover {
+  color: #ff7931;
+}
+
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 35px;
+  line-height: 47px;
+  padding: 60px 0 46px;
+}
+
+.header__menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 47px;
+}
+
+.main-picture {
+  background-image: url("/image/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-picture__logo {
+  padding: 46px 0 32px;
+}
+
+.main-picture__title {
+  font-size: 72px;
+  line-height: 84px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 139px;
+}
+
+.main-picture__text {
+  width: 456px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.articles__title {
+  margin: 44px 0 20px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.article__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article__item {
+  max-width: 370px;
+}
+
+.article__name {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+  padding: 20px 0 11px;
+}
+
+.article__text {
+  font-size: 14px;
+  line-height: 150%;
+  padding-bottom: 53px;
+}
+
+.active__article .article__name {
+  color: #ff7931;
+}
+
+.abonements {
+  /* background-color: ; */
+  background: #f7f7f7 url("/image/Ellipse.png") no-repeat 50% 50%;
+  width: 1440px;
+  height: 556px;
+}
+
+.abonements__wrapper {
+  text-align: center;
+}
+
+.abonements__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.abonements__title {
+  padding: 33px 0 35px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.abonements__section-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.second__title {
+  margin-top: 38px;
+}
+
+.abonements__section-text {
+  max-width: 370px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+
+.abonements__section:not(:last-of-type)::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 100px / 2);
+}
+
+.abonements__link {
+  padding: 17px 60px 15px 30px;
+  color: #fff;
+  background-color: #ff7931;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  margin-top: 35px;
+}
+
+.abonements__link::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  right: 24px;
+  top: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../image/Arrow2.png");
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #575757;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 46px;
+}
+
+.footer__menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__menu-item a:hover {
+  color: #ff7931;
+}
+
+.footer__menu-title {
+  padding: 26px 0 32px;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 46px;
+  border-bottom: 1px solid #fff;
+}
+
+.footer__menu-second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 42px;
+}
+
+.footer__menu-img-item {
+  width: 47px;
+  height: 47px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin-right: 14px;
+}
